@@ -26,6 +26,7 @@ header {
   background-position: center;
   background-size: cover;
   height: 30rem;
+
 }
 
 nav {
@@ -34,6 +35,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 nav div {
@@ -53,6 +55,11 @@ ul {
 li {
   display: inline;
   padding: 0 1rem;
+}
+
+.phone-size {
+  display: none;
+  text-decoration: underline;
 }
 
 /*Main Banner*/
@@ -139,4 +146,99 @@ footer .container{
 footer img {
   padding: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 1034px)
+{
+ .container {
+   width: 100%;
+ }
+
+ header {
+   height: 22rem;
+ }
+
+ .banner {
+   padding: 0.75rem 4rem;
+   margin-top: 5rem;
+   margin-right: 2rem;
+   font-size: 1.2rem;
+ }
+}
+
+@media only screen and (max-width: 742px)
+{
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  /*nav bar*/
+
+  ul {
+    display: none;
+  }
+
+  .phone-size {
+    display: block;
+  }
+
+  /*Banner section*/
+
+.flex {
+  display: block;
+}
+
+
+.banner {
+    margin-top: 9rem;
+    background-color: white;
+    padding: 1rem 0rem;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2rem;
+    width: 100%;
+  }
+
+  /*Supporting section*/
+
+  .supporting {
+    flex-direction: column;
+    margin: 3.77rem;
+    font-size: 0.77rem;
+  }
+
+  .service {
+    margin-bottom: 1.54rem;
+  }
+  }
+
+  /*main content*/
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+
+  }
+
+  .section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+      font-size: 0.77rem;
+      margin: 0 0 4rem 1rem;
+  }
+
 }
